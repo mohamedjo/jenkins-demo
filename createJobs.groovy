@@ -6,7 +6,7 @@ pipelineJob('pipelineJob') {
         }
     }
 }
-pipelineJob('cocus-job') {
+pipelineJob('theme-park-job') {
     definition {
         cpsScm {
             scm {
@@ -20,7 +20,7 @@ pipelineJob('cocus-job') {
         }
     }
 }
-pipelineJob('cocus-job-docker') {
+pipelineJob('theme-park-job-docker') {
     definition {
         cpsScm {
             scm {
