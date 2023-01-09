@@ -6,7 +6,7 @@ pipelineJob('pipelineJob') {
         }
     }
 }
-pipelineJob('theme-park-job') {
+pipelineJob('cocus-job') {
     definition {
         cpsScm {
             scm {
@@ -15,6 +15,21 @@ pipelineJob('theme-park-job') {
                         url 'https://github.com/mohamedjo/backendTaskCocusPortugal.git'
                     }
                     branch 'master'
+                }
+            }
+        }
+    }
+}
+pipelineJob('cocus-job-docker') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/mohamedjo/backendTaskCocusPortugal.git'
+                    }
+                    branch 'master'
+                    scriptPath('Jenkinsfile-docker')
                 }
             }
         }
