@@ -87,3 +87,5 @@ exit /b 1
 if "%OS%"=="Windows_NT" endlocal
 
 :omega
+
+git update-index --chmod=+x gradlew
